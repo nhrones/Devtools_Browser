@@ -1,0 +1,11 @@
+{
+   "name": "@ndh/browser",
+   "version": "1.0.0",
+   "exports": "./browser.ts",
+   "publish": {
+     "include": [
+       "README.md",
+       "browser.ts"
+     ]
+   }
+ }
