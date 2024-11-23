@@ -1,4 +1,9 @@
 /**
+ * Open a web page with the appropriate browser.
+ * @module
+ */
+
+/**
  * Get a browser open command based on the os
  * @returns the string for the command to call
  */
