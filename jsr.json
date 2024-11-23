@@ -1,6 +1,6 @@
 {
    "name": "@ndh/browser",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "exports": "./browser.ts",
    "license": "MIT",
    "publish": {
