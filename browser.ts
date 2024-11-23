@@ -1,5 +1,8 @@
 /**
  * Open a web page with the appropriate browser.
+ * 
+ * This utility is used by a few dev-servers to 
+ * auto-launch the browser with the url being served.
  * @module
  */
 
