@@ -1,6 +1,7 @@
 {
    "name": "@ndh/browser",
-   "version": "1.0.1",
+   "version": "1.0.2",
+   "description": "A utility used to launch a browser",
    "exports": "./browser.ts",
    "license": "MIT",
    "publish": {

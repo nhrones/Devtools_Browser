@@ -29,9 +29,13 @@ function getBrowserCmd(): string {
 }
 
 /**
- * Opens a website in the default browser
- * @param url  - the url to be opened in the browser
- * @example await openWebsite('https://Deno.com')
+ * Opens a URL in the default browser
+ * 
+ * @param url  - the complete url to be opened in the browser
+ * 
+ * @examples 
+ *    openWebsite('https://Deno.com')
+ *    openWebsite('http://localhost:8080')
  */
 export function openWebsite(url: string): Deno.CommandOutput {
    return new Deno.Command(getBrowserCmd(), 
