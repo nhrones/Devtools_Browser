@@ -2,6 +2,7 @@
    "name": "@ndh/browser",
    "version": "1.0.0",
    "exports": "./browser.ts",
+   "license": "MIT",
    "publish": {
      "include": [
        "README.md",

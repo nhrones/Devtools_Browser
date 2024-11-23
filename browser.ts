@@ -1,15 +1,15 @@
 /**
- * Get the browser open command based on the os
+ * Get a browser open command based on the os
  * @returns the string for the command to call
  */
-async function getBrowserCmd(): Promise<string> {
+function getBrowserCmd(): string {
    switch (Deno.build.os) {
       case "windows":
          return "explorer.exe";
       case "darwin":
          return "open";
       case "linux":
-         if ((await Deno.permissions.query({ name: "env" })) && Deno.env.get("WSL_DISTRO_NAME")) {
+         if (Deno.env.get("WSL_DISTRO_NAME")) {
             // is WSL
             return "explorer.exe";
          } else {
@@ -25,7 +25,7 @@ async function getBrowserCmd(): Promise<string> {
  * @param url  - the url to be opened in the browser
  * @example await openWebsite('https://Deno.com')
  */
-export async function openWebsite(url: string) {
-   return new Deno.Command(await getBrowserCmd(), 
+export function openWebsite(url: string): Deno.CommandOutput {
+   return new Deno.Command(getBrowserCmd(), 
    { args: [url] }).outputSync();
 }
