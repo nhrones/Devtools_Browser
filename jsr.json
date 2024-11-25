@@ -1,13 +1,13 @@
 {
    "name": "@ndh/browser",
-   "version": "1.0.2",
+   "version": "1.0.3",
    "description": "A utility used to launch a browser",
-   "exports": "./browser.ts",
+   "exports": "./mod.ts",
    "license": "MIT",
    "publish": {
      "include": [
        "README.md",
-       "browser.ts"
+       "mod.ts"
      ]
    }
  }
